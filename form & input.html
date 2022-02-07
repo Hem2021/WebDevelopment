@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="file.php">
+         <div>
+             Name : <input type="text" name="myname">
+         </div>
+         <br>
+         <div>
+             Address : <input type="text" name="myadd">
+         </div>
+         <br>
+         <div>
+             phone : <input type="number" name="mynumber">
+         </div>
+         <br>
+         <div>
+             Date : <input type="date" name="date">
+         </div>
+         <br>
+         <div>
+            Local Date-Time : <input type="datetime-local" name="datelocal">
+        </div>
+        <br>
+        <div>
+            Gender : 
+            male<input type="radio" name="gender">
+            Female<input type="radio" name="gender">
+            Trans<input type="radio" name="gender">
+        </div>
+        <br>
+        <div>
+            Select your hobbies : <br>
+            <input type="checkbox">singing<br>
+            <input type="checkbox">dancing<br>
+            <input type="checkbox">hiking<br>
+        </div>
+        <div>
+            <input type="submit" value="SUBMIT NOW">
+            <input type="reset" value="RESET NOW">
+        </div>
+        <div>
+            Select your country :  
+            <select>
+            <option value="default">Click here</option>
+            <option value="opt1">Nepal</option>
+            <option value="opt2" >India</option>
+            <option value="opt2" >china</option>
+            <option value="opt2" >USA</option>
+            <option value="opt2" >Uk</option>
+            <option value="opt2" >Bangladesh</option>
+        </select>
+        </div><br><br>
+        <div>
+            Input your Comment:<br>
+            <textarea name="text" rows="20" cols="20"></textarea>
+        </div>
+    </form>
+</body>
+</html>
