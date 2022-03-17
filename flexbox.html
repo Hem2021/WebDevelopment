@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        border: 2px solid black;
+        width: auto;
+        height: 400px;
+        display: flex;
+
+        /* "wrap" is used to make boxes more responsive i.e. to preserve the width and height when changing the size of the window*/
+        /* flex-wrap: wrap;   */
+
+        /* By default is "row" */
+        /* flex-direction:row; */
+
+        /* flex-direction:column;
+        flex-direction:row-reverse;
+        flex-direction:column-reverse; */
+
+        /* justify content is used to align flex boxes horizontally */
+
+        /* justify-content:space-between; */
+        /* justify-content:space-evenly; */
+        justify-content:center;
+        /* justify-content:space-around; */
+
+        /* align items is used to align flex boxes vertically */
+
+        align-items: center;
+        /* align-items:flex-end; */
+
+
+    }
+    #container #i1{
+        /* display: inline; */
+        border: 2px solid green;
+        background-color: tomato;
+        width: 200px;
+        height: 100px;
+        margin-right: 5px;
+    }
+    #i2{
+        /* display: inline; */
+        border: 2px solid green;
+        background-color: tomato;
+        width: 200px;
+        height: 100px;
+        margin-right: 5px;
+
+        /* flex-grow: 2;   */
+        flex-shrink: 5;
+    }
+    #i3{
+        /* display: inline; */
+        border: 2px solid green;
+        background-color: tomato;
+        width: 200px;
+        height: 100px;
+        margin-right: 5px;
+        flex-shrink: 1;
+        order:2;
+    }
+    #i4{
+        /* display: inline; */
+        border: 2px solid green;
+        background-color: tomato;
+        width: 200px;
+        height: 100px;
+        margin-right: 5px;
+        order:1;   /** used in individual flex boxes. High order means the box will be placed at last**/
+    }
+    #i5{
+        /* display: inline; */
+        border: 2px solid green;
+        background-color: tomato;
+        width: 200px;
+        height: 100px;
+        margin-right: 5px;
+    }
+    #i6{
+        /* display: inline; */
+        border: 2px solid green;
+        background-color: tomato;
+        width: 200px;
+        height: 100px;
+        margin-right: 5px;
+    }
+  
+</style>
+<body>
+    <div id="container">
+        <div class="items" id="i1">First</div>
+        <div class="items" id="i2">Second</div>
+        <div class="items" id="i3">Third</div>
+        <div class="items" id="i4">Fourth</div>
+        <!-- <div class="items" id="i5">Fifth</div>
+        <div class="items" id="i6">Sixth</div> -->
+    </div>
+</body>
+</html>
