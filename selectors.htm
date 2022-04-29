@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div > p /** selects p that are after div**/
+        {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        input{
+            display: block;
+        }
+        /* PSEUDO SELECTORS */
+        /* input{
+            color: red;         /** normal selector **/
+        /** padding: 10px;
+        } */
+        input[type = 'text']{       /** pseudo selector **/
+            color: red;         /** targets only attribute whose value is "text" **/
+            padding: 10px;
+        }
+
+        input[value='submit now']{
+            color: green;
+        }
+
+        input[placeholder = 'Phone number']{
+            color: yellow;
+        }
+
+
+        /* nTH child selector */
+        .item:nth-child(2n){
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1> This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p> This is a paragraph</p>
+        </div>
+        <p> This is another paragraph</p>
+    </div>
+    <p> This is the third paragraph</p>
+    -----------------------
+
+
+    <div class="container">
+        <div class="trail" id="item1">1st line</div>
+        <div class="trail" id="item2">2nd line</div>
+        <div class="trail" id="item3">3rd line</div>
+    </div><br>
+    <form class="control">
+        <input type="text" placeholder="Enter your name">
+        <input type="number" placeholder="Phone number">
+        <input type="button" value="submit now">
+    
+    </form><br><br>
+    
+    <div class="nthchildtest">
+        <div class="item" id="item1">one</div>
+        <div class="item" id="item2">two</div>
+        <div class="item" id="item3">three</div>
+        <div class="item" id="item4">four</div>
+        <div class="item" id="item5">five</div>
+        <div class="item" id="item6">six</div>
+        <div class="item" id="item7">seven</div>
+        <div class="item" id="item8">eight</div>
+        <div class="item" id="item9">nine</div>
+        <div class="item" id="item10">ten</div>
+    </div>
+</body>
+</html>

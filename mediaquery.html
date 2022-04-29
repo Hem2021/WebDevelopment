@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            font-size: 40px;
+            text-align: center;
+            background-color: red;
+            display: none;
+        }
+
+        @media (max-width : 300px){
+            #box1{
+                display: block;
+                /* border: 2px solid green; */
+                background-color: wheat;
+            }
+        }
+
+        @media (min-width : 300px ) and ( max-width: 600px){
+            #box2{
+                display: block;
+                border: 2px solid green;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width : 600px) and (max-width : 900px){
+            #box3{
+                display: block;
+                border: 2px solid green;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width: 900px){
+            #box4{
+                display: block;
+                border: 2px solid green;
+                background-color: cyan;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- what is media query ?
+    it is used to activate some css codes when the device width is set to certain value. -->
+
+    <div  >
+        <div class="container" id="box1">This is Mobile</div>
+        <div class="container" id="box2">This is Ipad</div>
+        <div class="container" id="box3">This is MacBook</div>
+        <div class="container" id="box4">This is Wide screen</div>
+    </div>
+    <!-- we can't use container as an id because ids are supposed to be unique. -->
+</body>
+</html>
