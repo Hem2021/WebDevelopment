@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 0px solid blue;
+            background-color: red;
+            border-radius: 10px;
+            
+            
+            
+        }
+        .animation{
+            margin: 0px;
+            border: px solid black;
+            background-color: green;
+            width: 0px;
+            /* animation: name duration iteration; */
+            animation: progress 10s 4;
+            animation-timing-function:ease-in-out;
+            animation-fill-mode:forwards;
+            border-radius: 10px;
+
+        }
+
+
+
+        h3{
+            padding: 0px 50%;
+            color: whitesmoke;
+
+        }
+        @keyframes progress {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation"><h3>loading</h3></div>
+       
+    </div>
+</body>
+</html>

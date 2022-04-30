@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header::before{   /* pseudo selectors */
+            background: url('images/image.jpg') no-repeat center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid red;
+            height: 300px;
+            justify-content: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <h1> This is Header</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt necessitatibus temporibus quidem dolore,
+            officia rerum dignissimos saepe omnis dolorem eligendi modi distinctio dolorum dolor nisi autem, optio eum
+            nobis.
+        </p>
+    </div>
+</header>
+</body>
+
+</html>
