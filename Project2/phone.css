@@ -1,0 +1,32 @@
+/* navbar */
+
+/* header */
+.home-format{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    /* border: 1px solid red; */
+    width: 640px;
+    margin: -263px auto 200px auto;
+    }
+
+.home-format{
+    font-size: 10px;
+    
+}
+
+/* services section */
+#services{
+    flex-direction: column ;
+}
+
+
+/* partner section */
+
+
+/* contact us section */
+
+
+/* footer/ */
