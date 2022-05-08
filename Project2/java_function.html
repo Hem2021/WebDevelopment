@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        var a = "This is a first statement";
+        // display index of any letter of a string
+        console.log(`The index of first "s" of the string is ${a.indexOf('s')}`);
+        console.log(`The index of last "s" of the string is ${a.lastIndexOf('s')}`);
+
+        //displaying certain letters from a string only
+        console.log(`Displaying the letters from Index 3 to Index 14(exclusive) : "${a.slice(3, 14)}"`);
+        console.log(`Displaying the letters from Index 3 to Index 14(exclusive) : "${a.substring(3, 14)}"`);
+
+        // this function displays the letter beginning from 3rd index to index having length of 11
+        console.log(`Displaying the letters from Index 3 to Index 14(exclusive) : "${a.substr(3, 11)}"`);
+
+        // to display the length of a string
+        console.log(`The length of the string is ${a.length}`);
+
+        // to replace the string
+        console.log(`Replacing "first" with " second". So, the string becomes- \n${a.replace("first", "second")} `);
+
+        // change the case of string
+        console.log(`The string after changing the cases are :
+        ${a.toUpperCase()}`);
+        console.log(`The string after changing the cases are :
+        ${a.toLowerCase()}`);
+    </script>
+<body>
+    This is a tutorial for learning functions of JS.
+</body>
+</html>
