@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    This is tutorial for conditional statements in Java Sctipt.
+    <script>
+
+        // for loop
+        let i=0;
+        for(i; i<4; i++)
+        {
+            console.log(`${i} is less than 4.`);
+        }
+
+        // for in loop
+        let employee={
+            name:'Harry',
+            salary:2000,
+            age:23
+        }
+        for (key in employee) {
+            console.log(`The ${key} of the employee is ${employee[key]}`);
+        }
+
+        // while loop
+        while(i<8)
+        {
+            console.log(`${i} is less than 8`);
+            i++;
+        }
+
+        // do-while loop
+        do{
+            console.log('This is the statement of the do loop');
+            i++;
+        }while(i<10);
+    </script>
+</body>
+</html>

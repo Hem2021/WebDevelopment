@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        To display today's date and time.
+    </div>
+    <span id="time"></span>
+
+    <script>
+
+        // setting timer of 2s 
+        setTimeout( welcome, 2000);
+        function welcome()
+        {
+            console.log('WELCOME');
+        }
+        
+        // setting timer of 4s along with the arguments passed to a greet function 
+        setTimeout(greet, 4000, 'Hemant', 'Nepal');  //donot use greet() as this is not valid
+        function greet(name,country)
+        {
+            console.log(`Welcome ${name}. Your country is ${country}`);
+        }
+
+        // repeating the function after certain time
+        // setInterval(greet, 1000, 'Hemant', 'Nepal'); 
+
+
+        //displaying current date and time
+        let counter=1;
+        function date(){
+        let date=new Date();
+        document.getElementById('time').innerHTML=`Date : ${date}`;
+        counter++;
+        console.log(counter); //i am using this code just to keep track of my counter variable
+        if(counter==5){
+        clearInterval(del);}
+        }
+        const del=setInterval(date, 1000);
+
+
+    </script>
+</body>
+</html>

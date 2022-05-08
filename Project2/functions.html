@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    // non-returnable function
+    // function declaration
+    function display(name, game='none of the games')   //name = 'none of the games' is a default parameter and this will be used only when no values are passed to this parameter while calling the function
+    {
+        console.log(name + " is playing " + game);
+    }
+
+
+    // variable declaration
+    let name1='ram';
+    let name2='jhari';
+    let name3='shyam';
+    let game1='football';
+    let game2='chess';
+    let game3='volleyball';
+
+    // function call
+    display(name1, game1);
+    display(name2, game2);
+    display(name3, game3);
+    display(name3);   //no value of game is passed
+
+
+
+
+    // returnable function 
+    // function declaration
+    function add_numbers(num1,num2) 
+    {
+        return num1+num2;    
+    }
+    let num1=4, num2=7;
+
+    // function call
+    console.log(`The sum of two numbers is : ${add_numbers(num1,num2)}`);
+</script>
+<body>
+    This is a tutorial for functions.
+</body>
+</html>

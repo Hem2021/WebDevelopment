@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let a = 'this is variable and this works similar to a "var".';
+    console.log(`${a}`);
+
+    const b = "This is a constant variable and this cant be changed.";
+
+    // if i try to change the value of a const variable i will get an error. To check uncomment the code below and run-
+    // let b="it will throw an error";
+    console.log(b);
+
+    // however i can declare b inside a block and this will be a local variable
+    {
+        let b = 'this is a valid variable';
+        console.log(b);
+    }
+
+
+    // if-else statements
+    let age = '17';
+    if (age > 18) {
+        console.log('You can have a drink here!');
+    }
+    else if (age < 16) {
+        console.log("You can't have a drink here!");
+    }
+    else {
+        console.log("Next year please!");
+    }
+
+
+    // switchcase statemnts
+    let name = 'shym';
+    switch (name) 
+    {
+        case 'hem':
+            console.log('This is hem');
+            break;
+
+        case 'ram':
+            console.log('This is ram');
+            break;
+
+        case 'shyam':
+            console.log('This is shyam');
+            break;
+
+        default:
+            console.log('Not a valid name input');
+            break;
+    }
+</script>
+
+<body>
+    <div>
+        <ul>
+            <li>This is item 1</li>
+            <li>This is item 2</li>
+            <li>This is item 3</li>
+            <li>This is item 4</li>
+            <li>This is item 5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

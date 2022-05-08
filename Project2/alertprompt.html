@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .check{
+        display: inline;
+        padding: 5px;
+        border: 2px solid red;
+    }
+    .check1{
+        display: inline-block;
+        padding: 5px;
+        border: 2px solid red;
+        height: 500px;
+
+    }
+</style>
+<body>
+    This is a tutorial of alert, prompt, confirm.
+    <div class="check">
+        hello
+    </div>
+    <div class="check1">
+        hi
+    </div>
+    <script>
+        // alert
+        alert("Welcome");
+
+        //confirm
+        let a= confirm('Are you sure?');
+        console.log(a);
+
+        // prompt
+        let response= prompt('Enter your age below.', '');
+        if(response>=18)
+        {
+            console.log('You can enter this site.');
+        }
+        else
+        console.log('Access Denied');
+    </script>
+</body>
+</html>
