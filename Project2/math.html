@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    This is a tutorial for math function.
+    <script>
+        let mat_variable = Math;
+        console.log(mat_variable);
+        console.log(Math.PI);
+
+        console.log('The square root of 64 is :', Math.sqrt(64));
+        console.log('The power of 6 raised to 4 is ', Math.pow(6,4));
+        console.log('The value of sin(pi) is : ', Math.sin(Math.PI));
+
+        // rounding up
+        console.log('Rounding the value of 34.58 and 33.455 is : ', Math.round(34.58), Math.round(33.455));
+
+        //round up and round down
+        console.log('Rounding up and Rounding down the 3.3 ',Math.ceil(3.3), Math.floor(3.3));
+
+        // random Number generator
+        let num = Math.random();
+        console.log('Random number is = ',num);   // displays random number between 0 and 1
+
+
+        // random number between any two numbers
+        let num1 = 10, num2 = 100;
+        let ran = num1 + (num2 - num1)*Math.random();
+        console.log('Random number between 10 and 100 is : ', ran);
+        console.log('Random number between 10 and 100 (integer)is : ', Math.round(ran));
+
+
+        // min and max 
+        console.log('Min and max values of 3,5,2,56,33,66,-1 is : ', Math.min(3,5,2,56,33,66,-1), Math.max(3,5,2,56,33,66,-1));
+    </script>
+</body>
+</html>
