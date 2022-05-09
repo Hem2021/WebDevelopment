@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #date_time{
+            border: 2px solid black;
+            padding: 10px;
+            display: block;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="date_time">
+        Date : <span id="date"></span><br>
+        Time : <span id="time"></span>
+    </div>
+    
+    <script>
+
+        // current date and time
+        
+        setInterval(initiate, 1000);
+        function initiate(){
+        let dat= new Date(); //present date and time
+            document.getElementById('time').innerHTML=`${dat.getHours()} : ${dat.getMinutes()} : ${dat.getSeconds()} `;
+            // console.log(current);
+            
+            document.getElementById('date').innerHTML=`${dat.getFullYear()} : ${dat.getMonth()} : ${dat.getDay()} `;
+            // console.log(current);
+
+        }
+
+
+        // set date and time to any reference
+        // let set=new Date('2023-1-14');
+        // console.log(set);
+
+        // // to display date: year, month, day, time directly
+        // console.log(`Year : ${dat.getFullYear()}`);
+        // console.log(`Month : ${dat.getMonth()}`);
+        // console.log(`Day : ${set.getDay()}`); //sunday, monday... 0 is sunday
+        // console.log(`Hour : ${dat.getHours()}`);
+        // console.log(`Minutes : ${dat.getMinutes()}`);
+
+        // setInterval(date_time, 1000);
+        // function date_time()
+        // {
+        //     console.log(`Current Time : ${dat.getHours()} : ${dat.getMinutes()} : ${dat.getSeconds()}`);
+        // }
+    </script>
+</body>
+</html>

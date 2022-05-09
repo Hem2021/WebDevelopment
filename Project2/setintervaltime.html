@@ -38,9 +38,10 @@
         let date=new Date();
         document.getElementById('time').innerHTML=`Date : ${date}`;
         counter++;
-        console.log(counter); //i am using this code just to keep track of my counter variable
-        if(counter==5){
-        clearInterval(del);}
+        // console.log(counter); //i am using this code just to keep track of my counter variable
+        // if(counter==5){
+        // clearInterval(del);}
+        console.log(`${date.getMonth()}`) //month starts from feburary
         }
         const del=setInterval(date, 1000);
 
