@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #welcome-section {
+            border: 2px solid red;
+            height: 100vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOqSZv5pkidhDXrYX6O1OQVuMd7GGwmJf6Q&usqp=CAU);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* background-image:url("down.png"); */
+        }
+
+        #welcome-section>img {
+            position: absolute;
+            bottom: -20px;
+            width: 40%;
+        }
+
+        #welcome-section>h1 {
+            color: white;
+            font-size: 50px;
+        }
+
+        #navbar {
+            position: fixed;
+            width: 100%;
+        }
+
+        #navbar>ul {
+            display: flex;
+            border: 2px solid red;
+            justify-content: center;
+            background-color: black;
+        }
+
+        ul>li {
+            list-style: none;
+        }
+
+        ul>li>a {
+            padding: 10px 40px;
+            border: 2px solid red;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+
+        li>a:hover {
+            background-color: red;
+            color: black;
+            transition-duration: 0.5s;
+        }
+#projects{
+    border: 2px solid rgb(134, 131, 131);
+    margin-top: 10px;
+    padding: 20px;
+}
+        .project-tile {
+            display: flex;
+            align-items: center;
+
+        }
+        .project-tile h3{
+            text-align: center;
+            font-size: 30px;
+        }
+        .project-tile img{
+            /* width: 50%; */
+            border: 2px solid rgb(200, 193, 193);
+            padding: 10px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px rgb(207, 207, 207);
+            display: block;
+            margin: 20px 20px;
+        }
+
+        .project-tile img:hover{
+            transform: scale(1.1);
+        }
+        @media (max-width:200px){
+
+        }
+        #profile{
+            margin:10px auto ;
+            display: block;
+            /* width: 300px; */
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #profile hr{
+            width: 20px;
+            margin: 0px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Welcome</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+    <div id="welcome-section">
+        <h1>Welcome Viewers!</h1>
+        <img src="./down.png" alt="Scroll down">
+    </div>
+
+    <div id="projects">
+        <div class="project-tile">
+            <div id="1">
+                <h3>Piano Project</h3>
+                <a href="https://hem2021.github.io/piano-project/" target="_blank"><img
+                        src="piano.png"
+                        alt="Click Here"></a>
+            </div>
+            <div id="2">
+                <h3>Blog Project</h3>
+                <a href="https://hem2021.github.io/Simple-Blog-project/#photos" target="_blank"><img
+                        src="account.png"
+                        alt="Click Here"></a>
+            </div>
+        </div>
+    </div>
+    <div id="profile">
+        <h3 style="padding-bottom: 10px;">Profile<hr> </h3>
+        <a id="profile-link" href="https://hem2021.github.io/piano-project/" target="_blank">My GitHub</a>
+    </div>
+</body>
+
+</html>
