@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        #container {
+            background-color: aliceblue;
+            border: 1px solid red;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box {
+            width: 500px;
+            height: 500px;
+            /* margin: 0px auto; */
+            border: 1px solid rgb(90, 81, 81);
+            border-radius: 10px;
+            background-color: rgb(229, 240, 245);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #date {
+            width: auto;
+            color: red;
+            /* border: 1px solid red; */
+            font-size: 30px;
+            margin: 20px auto;
+
+        }
+        #time{
+            width: 300px;
+            color:gray;
+            /* border: 1px solid red; */
+            font-size: 20px;
+            margin: 20px auto;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="date"></div>
+            <div id="time">Helo</div>
+        </div>
+    </div>
+    <script>
+
+        function date() {
+            let date = new Date();
+            span_date = date.toDateString();
+            document.getElementById("date").innerHTML = span_date;
+            if (date.getHours() < 10) {
+                let time = "0" + date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
+                document.getElementById("time").innerHTML = time;
+
+            }
+            else if (date.getMinutes() < 10){
+                let time = date.getHours() + " : " + "0" + date.getMinutes() + " : " + date.getSeconds();
+                document.getElementById("time").innerHTML = time;
+
+            }
+            else if(date.getSeconds() < 10){
+            let time = date.getHours() + " : " + date.getMinutes() + " : " + "0" + date.getSeconds();
+            document.getElementById("time").innerHTML = time;}
+
+            
+            else {
+                let time = date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
+                document.getElementById("time").innerHTML = time;
+            }
+
+        }
+        setInterval(date, 1000);
+    </script>
+</body>
+
+</html>
