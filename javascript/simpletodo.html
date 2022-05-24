@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+    First Name: <input type="text" id="myText" value="">
+   <input type="submit" id="myText" value="submit"></form>
+
+    <p>Click the button to display the value of the value attribute of the text field.</p>
+
+    <button id="add">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        let add= document.getElementById('add');
+        add.addEventListener('click', function(){
+            let container = document.getElementById('demo');
+            let myText = document.getElementById('myText');
+            var x = myText.value;
+            let list= document.createElement('p');
+            list.innerHTML=x;
+            container.appendChild(list);
+            myText.value="";
+            list.addEventListener('dblclick', function(){
+                list.style.display='none';
+            })
+        })
+    </script>
+
+</body>
+
+</html>
